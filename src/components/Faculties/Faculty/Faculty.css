@@ -83,7 +83,7 @@
 .faculties__button-back {
   text-align: center;
   background-color: #262626;
-  color: #FFFFFF;
+  color: var(--light-color);
   border-radius: 14px;
   border: 0;
   margin: 0;
@@ -98,7 +98,7 @@
 }
 
 .faculties__button-back:hover {
-  background-color: #5686E3;
+  background-color: var(--blue-primary-color);
 }
 
 .faculties__button-close {

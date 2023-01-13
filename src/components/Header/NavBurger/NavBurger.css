@@ -13,7 +13,7 @@
 
 .navBurger_opened {
    position: fixed;
-   background-color: #FBFAF8;
+   background-color: var(--main-bg-color);
    z-index: 2;
    visibility: visible;
    opacity: 1;
@@ -36,7 +36,7 @@
 }
 
 .navBurger__redirect-button {
-   color: #000000;
+   color: var(--black-text-color);
    background-color: transparent;
    width: 271px;
    border: 0;

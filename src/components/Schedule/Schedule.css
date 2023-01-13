@@ -41,7 +41,7 @@
 .schedule__span {
   font-size: 64px;
   line-height: 125%;
-  color: #5686E3;
+  color: var(--blue-primary-color);
   font-weight: 500;
 }
 

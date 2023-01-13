@@ -9,7 +9,7 @@
 .roles__title {
   padding-bottom: 50px;
   margin: 0;
-  color: #000000;
+  color: var(--black-text-color);
   font-size: 48px;
   font-weight: 400;
 }
@@ -33,7 +33,7 @@
   font-weight: 400;
   border-radius: 15px;
   list-style-type: none;
-  background-color: #FFFFFF;
+  background-color: var(--light-color);
   box-shadow: 15px 15px 20px 0px rgba(143, 157, 167, 0.05),
     15px -15px 20px 0px rgba(143, 157, 167, 0.05),
     -15px 15px 20px 0px rgba(143, 157, 167, 0.05),
@@ -46,7 +46,7 @@
   font-size: 18px;
   font-weight: 400;
   border-radius: 15px;
-  background-color: #FFFFFF;
+  background-color: var(--light-color);
 }
 
 .roles__overflow {
