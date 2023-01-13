@@ -16,7 +16,7 @@
 .vacancies__title {
   padding-bottom: 0;
   margin: 0 0 50px;
-  color: #000000;
+  color: var(--black-text-color);
   font-size: 40px;
   line-height: 46.88px;
   font-weight: 400;
@@ -66,7 +66,7 @@
 
 .vacancies__button {
   text-align: center;
-  color: #000000;
+  color: var(--black-text-color);
   border: none;
   margin: 0;
   padding: 17px 0;
@@ -98,7 +98,7 @@
 
 .vacancies__button_s {
   text-align: center;
-  color: #000000;
+  color: var(--black-text-color);
   background-color: transparent;
   width: 230px;
   border-radius: 15px;
@@ -127,17 +127,17 @@
 }
 
 .vacancies__button_s_active {
-  border: 2px solid #000000;
+  border: 2px solid var(--black-text-color);
 }
 
 .vacancies__button_active {
-  color: #5686E3;
+  color: var(--blue-primary-color);
   border-bottom: none;
 }
 
 .vacancies__button:hover {
-  color: #000000;
-  border-bottom: 1px solid #000000;
+  color: var(--black-text-color);
+  border-bottom: 1px solid var(--black-text-color);
 }
 
 .vacancies__grid {
@@ -167,10 +167,10 @@
   padding: 18px 0;
   text-align: center;
   background-color: transparent;
-  color: #000000;
+  color: var(--black-text-color);
   width: 320px;
   border-radius: 15px;
-  border: solid 1px #000000;
+  border: solid 1px var(--black-text-color);
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -182,7 +182,7 @@
 }
 
 .vacancies__more-button:active {
-  color: #FFFFFF;
-  background-color: #000000;
+  color: var(--light-color);
+  background-color: var(--black-text-color);
   transition: 0.3s ease;
 }

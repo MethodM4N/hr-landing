@@ -7,7 +7,7 @@
 .faculties__title {
    padding-bottom: 36px;
    margin: 0;
-   color: #000000;
+   color: var(--black-text-color);
    font-size: 36px;
    font-weight: 400;
 }

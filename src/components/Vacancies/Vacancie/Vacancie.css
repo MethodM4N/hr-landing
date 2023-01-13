@@ -6,7 +6,7 @@
    padding: 0;
    margin: 0 auto;
    border-radius: 15px;
-   background-color: #FFFFFF;
+   background-color: var(--light-color);
    box-shadow: 15px 15px 20px 0px rgba(143, 157, 167, 0.05),
       15px -15px 20px 0px rgba(143, 157, 167, 0.05),
       -15px -15px 20px 0px rgba(143, 157, 167, 0.05),
@@ -38,7 +38,7 @@
 .vacancie__title {
    padding: 0;
    margin: 0 0 20px 0;
-   color: #000000;
+   color: var(--black-text-color);
    font-family: YS Text;
    font-size: 36px;
    line-height: 42.19px;
@@ -56,7 +56,7 @@
 .vacancie__text {
    padding: 0;
    margin: 0;
-   color: #000000;
+   color: var(--black-text-color);
    font-size: 24px;
    line-height: 30px;
    font-weight: 500;
@@ -74,7 +74,7 @@
    justify-self: center;
    text-align: center;
    background-color: #262626;
-   color: #FFFFFF;
+   color: var(--light-color);
    border-radius: 14px;
    border: 0;
    margin: 0 auto 35px;
@@ -95,7 +95,7 @@
 }
 
 .vacancie__button:hover {
-   background-color: #5686E3;
+   background-color: var(--blue-primary-color);
 }
 
 .vacancie__button:active {

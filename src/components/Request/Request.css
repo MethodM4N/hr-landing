@@ -41,7 +41,7 @@
 }
 
 .request__button:hover {
-  background-color: #5686E3;
+  background-color: var(--blue-primary-color);
 }
 
 .request__button:active {

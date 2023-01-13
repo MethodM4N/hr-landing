@@ -29,7 +29,7 @@
   padding: 0;
   border-radius: 14px;
   background-color: #262626;
-  color: #FFFFFF;
+  color: var(--light-color);
   cursor: pointer;
   transition: transform .4s ease;
 }
@@ -49,7 +49,7 @@
 }
 
 .result__btn:hover {
-  background-color: #5686E3;
+  background-color: var(--blue-primary-color);
 }
 
 .result__btn:active {

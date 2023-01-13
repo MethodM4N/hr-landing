@@ -23,7 +23,7 @@
    text-align: center;
    margin: 0 0 20px;
    width: 560px;
-   color: #000000;
+   color: var(--black-text-color);
    font-size: 50px;
    line-height: 55px;
    font-weight: 400;
@@ -43,7 +43,7 @@
    text-align: center;
    margin: 0 0 30px;
    width: 414px;
-   color: #000000;
+   color: var(--black-text-color);
    font-family: YS Text;
    font-size: 18px;
    line-height: 22.5px;
@@ -62,7 +62,7 @@
 .intro__button {
    text-align: center;
    background-color: #262626;
-   color: #FFFFFF;
+   color: var(--light-color);
    border-radius: 14px;
    border: 0;
    margin: 0 0 0 -20px;
@@ -81,7 +81,7 @@
 }
 
 .intro__button:hover {
-   background-color: #5686E3;
+   background-color: var(--blue-primary-color);
 }
 
 .intro__button:active {
