@@ -21,7 +21,7 @@
 .intro__title {
    padding: 50px 0 0;
    text-align: center;
-   margin: 0 0 20px;
+   margin: 0 0 35px;
    width: 560px;
    color: var(--black-text-color);
    font-size: 50px;
@@ -41,7 +41,7 @@
 .intro__text {
    padding: 0;
    text-align: center;
-   margin: 0 0 30px;
+   margin: 0 0 40px;
    width: 414px;
    color: var(--black-text-color);
    font-family: YS Text;
