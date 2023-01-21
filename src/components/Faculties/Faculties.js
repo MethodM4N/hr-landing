@@ -9,8 +9,8 @@ function Faculties({ navButtonHandler, vacancies }) {
          <h2 className="faculties__title">Наши факультеты</h2>
          <div className="wrapper">
          <ul className="faculties__grid">
-          {datas.map((item, i) => <Faculty
-          navButtonHandler={navButtonHandler} vacancies={vacancies} key={i} {...item} />)}
+          {datas.map((item, i) => (<Faculty
+          navButtonHandler={navButtonHandler} vacancies={vacancies} key={i} {...item} />))}
          </ul>
          </div>
       </section>
