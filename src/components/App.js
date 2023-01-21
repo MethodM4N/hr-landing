@@ -12,6 +12,7 @@ import Quiz from './Quiz/Quiz';
 import Teachers from './Teachers/Teachers';
 import './app.css';
 import Vacancies from './Vacancies/Vacancies';
+import FormContext from '../context/FormContext';
 
 function App() {
   const quiz = useRef(null);
@@ -27,6 +28,8 @@ function App() {
 
   const body = useRef();
 
+  console.log('ya otrenderilsya');
+
   return (
     <div ref={body} className="inner">
       <Header
@@ -39,16 +42,18 @@ function App() {
       onRedirectButton={navButtonHandler}
       vacancies={vacancies}
       componentRef={tasks}/>
-      <Quiz onRedirectButton={navButtonHandler} componentRef={quiz} vacancies={vacancies}
-      setIsPopupWithFormOpen={setIsPopupWithFormOpen} body={body} />
-      <Expert />
-      <Faculties navButtonHandler={navButtonHandler} vacancies={vacancies} />
-      <Roles />
-      <Schedule />
-      <Vacancies componentRef={vacancies}/>
-      <Teachers componentRef={teachers} />
-      <Request isPopupWithFormOpen={isPopupWithFormOpen}
+      <FormContext.Provider value={[isPopupWithFormOpen, setIsPopupWithFormOpen]}>
+        <Quiz onRedirectButton={navButtonHandler} componentRef={quiz} vacancies={vacancies}
+        body={body} />
+        <Expert />
+        <Faculties navButtonHandler={navButtonHandler} vacancies={vacancies} />
+        <Roles />
+        <Schedule />
+        <Vacancies componentRef={vacancies}/>
+        <Teachers componentRef={teachers} />
+        <Request isPopupWithFormOpen={isPopupWithFormOpen}
         setIsPopupWithFormOpen={setIsPopupWithFormOpen} />
+      </FormContext.Provider>
       <Footer />
     </div>
   );

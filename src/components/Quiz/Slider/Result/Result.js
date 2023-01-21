@@ -1,13 +1,18 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React, { useCallback, useEffect, useState } from 'react';
+import React, {
+  useCallback, useEffect, useState, useContext
+} from 'react';
 import './Result.css';
+import FormContext from '../../../../context/FormContext';
 
 const Result = ({
-  btnText, title, yes, no, onRedirectButton, vacancies, setIsPopupWithFormOpen, body
+  btnText, title, yes, no, onRedirectButton, vacancies, body
 }) => {
   const classes = yes > no ? 'result result_type_review' : 'result result_type_teacher';
   const [width, setWidth] = useState(0);
+  const [isPopupWithFormOpen, setIsPopupWithFormOpen] = useContext(FormContext);
+
   useEffect(() => {
     setWidth(body.current.offsetWidth);
   }, []);

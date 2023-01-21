@@ -5,7 +5,7 @@ import './Quiz.css';
 import bubble from './images/Bubble.png';
 
 const Quiz = ({
-  componentRef, onRedirectButton, vacancies, setIsPopupWithFormOpen, body
+  componentRef, onRedirectButton, vacancies, body
 }) => (
     <section className="quiz" ref={componentRef}>
       <div className="quiz__wrapper">
@@ -17,7 +17,7 @@ const Quiz = ({
             <img src={bubble} alt="bubble" className="quiz__img" />
           </div>
           <Slider onRedirectButton={onRedirectButton} vacancies={vacancies}
-        setIsPopupWithFormOpen={setIsPopupWithFormOpen} body={body} />
+        body={body} />
         </div>
       </div>
     </section>

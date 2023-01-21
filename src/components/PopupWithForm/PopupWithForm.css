@@ -108,11 +108,9 @@
 
 .request__input_long {
   padding-top: 15px;
-  /* margin-bottom: 18px; */
   min-height: 109px;
   display: flex;
   justify-content: center;
-  align-items: start;
 }
 
 .request__input_long:focus {
